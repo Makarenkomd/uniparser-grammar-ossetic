@@ -10,7 +10,10 @@ The analyzer is available as a Python package. If you want to analyze Ossetic te
 pip3 install uniparser-ossetic
 ```
 
-Import the module and create an instance of ``OsseticAnalyzer`` class. Set ``mode='strict'`` if you are going to process text in standard orthography, or ``mode='nodiacritics'`` if you expect the ``ӕ`` character to be misrepresented in some words (either as an identically looking Latin character or as *ае*). After that, you can either parse tokens or lists of tokens with ``analyze_words()``, or parse a frequency list with ``analyze_wordlist()``. Here is a simple example:
+``mode='strict'``  - буква ӕ написана кирилицей?
+``mode='nodiacritics'`` - буква ``ӕ``  латиницей или ае. 
+
+After that, you can either parse tokens or lists of tokens with ``analyze_words()``, or parse a frequency list with ``analyze_wordlist()``. Here is a simple example:
 
 ```python
 from uniparser_ossetic import OsseticAnalyzer
